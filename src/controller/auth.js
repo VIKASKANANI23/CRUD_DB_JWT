@@ -120,8 +120,6 @@ const add = async (req, res) => {
     console.log(user.rows.length);
 
     if (user.rows.length) {
-      console.log(`user.rows- ${user.rows}`);
-
       return res.status(401).json('employee already exist! so  login in ');
     }
     //bcrypt  the user password
