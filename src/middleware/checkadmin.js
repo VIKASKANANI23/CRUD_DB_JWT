@@ -21,7 +21,7 @@ const isadmin = (permission) => {
           .json('you are not admin that is why we could not show data');
       }
     } catch (error) {
-      res.status(404).send('does not exist log in  ,  so please register first');
+      res.status(404).send('does not exist log in  ,  so please register first and if you do something then just let me know i also want to learn brooooo :)');
     }
   };
 };
