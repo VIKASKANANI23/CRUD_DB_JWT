@@ -5,7 +5,6 @@ const jwtGenerator = require('../tokenverify/jwtgenerator');
 //------------------------------alldata-user-wholedata---------------------------------//
 
 const getdata = async (req, res) => {
-  console.log('ss');
   try {
     const a = await pool.query(queries.alldata);
     res.status(200).json(a.rows);
