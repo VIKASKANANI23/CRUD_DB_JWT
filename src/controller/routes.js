@@ -8,8 +8,8 @@ const authorize = require('../middleware/authorization');
 const vikas = require('../middleware/checkadmin');
 
 //routes
-router.post('/register', validInfo, controller.userregister);
-router.post('/login', validInfo, controller.userlogin);
+router.post('/register', validInfo, controller.userregister); //register
+router.post('/login', validInfo, controller.userlogin); //login
 router.get('/wholedata', authorize, controller.getdata); // all data see
 router.get('/:user_name', controller.getspecificdata);
 router.get(

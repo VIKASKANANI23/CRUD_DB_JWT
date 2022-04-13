@@ -5,7 +5,6 @@ const jwtGenerator = require('../tokenverify/jwtgenerator');
 //------------------------------alldata-user-wholedata---------------------------------//
 
 const getdata = async (req, res) => {
-  console.log('ss');
   try {
     const a = await pool.query(queries.alldata);
     res.status(200).json(a.rows);
@@ -113,7 +112,7 @@ const confilctalldata = async (req, res) => {
 const add = async (req, res) => {
   try {
     const { emp_id, emp_name, emp_dept, emp_place } = req.body;
-    //console.log(req.body.emp_name);
+    console.log(req.body.emp_name);
     //check if users exits
     const user = await pool.query(queries.empname, [emp_name]);
 
